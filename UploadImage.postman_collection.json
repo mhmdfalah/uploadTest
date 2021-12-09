@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "6e032d39-ae3b-4d30-ad5c-fda97185c939",
+		"name": "UploadImage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upload-image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/ahmadalwan/Desktop/RepzoApp/Screen Shot 2021-11-25 at 3.52.03 AM.png"
+						},
+						{
+							"key": "update",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{host}/upload-image/"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://{host}/delete-image/{uuid}"
+			},
+			"response": []
+		},
+		{
+			"name": "get-image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://{host}/get-image/{uuid}"
+			},
+			"response": []
+		},
+		{
+			"name": "update-image",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/ahmadalwan/Desktop/Screen Shot 2021-11-25 at 4.19.23 AM.png"
+						}
+					]
+				},
+				"url": "http://{host}/update-image/{uuid}"
+			},
+			"response": []
+		}
+	]
+}
